@@ -93,6 +93,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 bWFjIjoiNjVhYWVkZGU2ZmVmNzU0ODlmMDgyMzM5ZGNmODY4NmVhOWQzMDIyYzZmNzJjYmM4MTVhNTQ4ZDkzYmQxNDhiNyJ9','1212121212','admin','1994-12-12');
 by running this commmand, id = "admin@test.com", password= "asdasd".
 
+6) for payment you can create an account on stripe and get the keys
+    * your publishable key will replace "pk_test_cYjCkVhpEHSO6hBUpw7onKAQ00tD3gwEQx" in checkout.blade.php line 136,
+    * your private key will replace "sk_test_BUTj1DTkBYXgRDHkB3tMcIK500lK4x7mVq" in CheckoutController line 36.
+
 ## website
 
 While logged in as admin you can :
