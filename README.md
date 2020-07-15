@@ -84,8 +84,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     ----- composer install
 2) enter your database details in .env.example and copy .env.example file .env on root folder
     ----- cp .env.example .env
+ #) In App/Providers/TaxServiceProvider cut the code of boot()
 3)  ----- php artisan key:generate
 4)  ----- php artisan serve
+ #) In App/Providers/TaxServiceProvider paste the code of boot()
 5) Create one user from postgres terminal as admin 
     ----- insert into users (fname, lname, username, email, password, phone, role, birthdate) values ('anki','khantwal','admin','admin@test.com','eyJpdiI6Ilh6UGVKZWhST1lUMFg3a3pWOHVzRWc9PSIsInZhbHVlIjoiblRlUm9ldEdsaHRvb0JMM1JobjZNUT09Iiwi
 bWFjIjoiNjVhYWVkZGU2ZmVmNzU0ODlmMDgyMzM5ZGNmODY4NmVhOWQzMDIyYzZmNzJjYmM4MTVhNTQ4ZDkzYmQxNDhiNyJ9','1212121212','admin','1994-12-12');
