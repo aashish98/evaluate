@@ -89,6 +89,12 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 4)  ----- php artisan serve
  #) In App/Providers/TaxServiceProvider paste the code of boot()
 5) Create one user from postgres terminal as admin 
+
+   go to signup and create a user, it will be created as a user and you can change it in the database terminal by running this command
+   --- update users set role = 'admin' where id = 1;
+
+or
+
     ----- insert into users (fname, lname, username, email, password, phone, role, birthdate) values ('anki','khantwal','admin','admin@test.com','eyJpdiI6Ilh6UGVKZWhST1lUMFg3a3pWOHVzRWc9PSIsInZhbHVlIjoiblRlUm9ldEdsaHRvb0JMM1JobjZNUT09Iiwi
 bWFjIjoiNjVhYWVkZGU2ZmVmNzU0ODlmMDgyMzM5ZGNmODY4NmVhOWQzMDIyYzZmNzJjYmM4MTVhNTQ4ZDkzYmQxNDhiNyJ9','1212121212','admin','1994-12-12');
 by running this commmand, id = "admin@test.com", password= "asdasd".
